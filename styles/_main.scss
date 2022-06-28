@@ -1,0 +1,113 @@
+html {
+  font-size: var(--step);
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Flex', sans-serif;
+  background-color: var(--base-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  padding: 3rem;
+}
+
+.logo {
+  width: var(--logo-size);
+  height: var(--logo-size);
+
+  @media (max-width: 1200px) {
+    --logo-size: 8rem;
+  }
+
+  @media (max-width: 960px) {
+    --logo-size: 5rem;
+  }
+}
+
+.main {
+  padding: 0 0 0 12.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (max-width: 1200px) {
+    padding: 0 0 0 8.5rem;
+
+  }
+
+  @media (max-width: 960px) {
+    padding: 0 0 0 1rem;
+
+  }
+}
+
+h1 {
+  font-size: 12.5rem;
+  font-weight: 900;
+  margin: 0 0 9rem 0;
+
+  @media (max-width: 1200px) {
+    font-size: 8rem;
+  }
+
+  @media (max-width: 960px) {
+    font-size: 4rem;
+  }
+}
+
+.title-base-color {
+  color: var(--accent-color);
+  .title-inverse {
+    color: var(--second-color);
+  }
+
+  &.title-base-color-inverse {
+    color: var(--second-color);
+    .title-inverse {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.button {
+  font-size: 6.5rem;
+  font-weight: 900;
+  color: var(--base-color);
+  display: inline-block;
+  padding: 3rem 5rem;
+  margin-bottom: 3rem;
+  border-radius: 4rem;
+  background-color: var(--accent-color);
+  outline: 0;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: 1200px) {
+    font-size: 5rem;
+    padding: 3rem 4rem;
+  }
+  @media (max-width: 960px) {
+    font-size: 3rem;
+    padding: 2rem 3.5rem;
+  }
+}
+
+.link {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--primary-color);
+
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 960px) {
+    font-size: 1.5rem;
+  }
+}

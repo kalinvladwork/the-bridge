@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Bridge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+
+<header>
+    <img class="logo" src="images/logo.svg" alt="logo">
+</header>
+
+<main class="main">
+    <div class="content">
+<!--        title-base-color-inverse класс подставлять для инверсии цвета текста-->
+        <h1 class="title-base-color">
+            Кримський міст
+            зруйновано? <span class="title-inverse">Ще ні</span>
+        </h1>
+        <button id="openModal" type="button" class="button">
+            Прискорити
+        </button>
+        <div>
+            <a class="link" href="">Що ще я можу зробити?</a>
+        </div>
+    </div>
+</main>
+
+<div id="modal" class="modal-overlay" >
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <p class="modal-title">Зробити донат</p>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li><img src="images/gos.svg" alt=""><a href="">Медичний батальйон "Госпітальєри"</a></li>
+                <li><img src="images/pov.svg" alt=""><a href="">Повернись живим</a></li>
+                <li><img src="images/zsu.svg" alt=""><a href="">Збройні Cили України</a></li>
+                <li><img src="images/kolo.svg" alt=""><a href="">Kolo</a></li>
+                <li><img src="images/pri.svg" alt=""><a href="">Благодійний Фонд Сергія Притули</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

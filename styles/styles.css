@@ -1,0 +1,213 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,900&display=swap");
+:root {
+  --step: 8px;
+  --logo-size: 10rem;
+  --base-color: #000000;
+  --second-color: #666666;
+  --primary-color: #9E9E9E;
+  --neutral-color: #292621;
+  --accent-color: #D3F500;
+  --modal-background: #302D27A6;
+}
+
+html {
+  font-size: var(--step);
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  background-color: var(--base-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 3rem;
+}
+
+.logo {
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+@media (max-width: 1200px) {
+  .logo {
+    --logo-size: 8rem;
+  }
+}
+@media (max-width: 960px) {
+  .logo {
+    --logo-size: 5rem;
+  }
+}
+
+.main {
+  padding: 0 0 0 12.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  .main {
+    padding: 0 0 0 8.5rem;
+  }
+}
+@media (max-width: 960px) {
+  .main {
+    padding: 0 0 0 1rem;
+  }
+}
+
+h1 {
+  font-size: 12.5rem;
+  font-weight: 900;
+  margin: 0 0 9rem 0;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 960px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.title-base-color {
+  color: var(--accent-color);
+}
+.title-base-color .title-inverse {
+  color: var(--second-color);
+}
+.title-base-color.title-base-color-inverse {
+  color: var(--second-color);
+}
+.title-base-color.title-base-color-inverse .title-inverse {
+  color: var(--accent-color);
+}
+
+.button {
+  font-size: 6.5rem;
+  font-weight: 900;
+  color: var(--base-color);
+  display: inline-block;
+  padding: 3rem 5rem;
+  margin-bottom: 3rem;
+  border-radius: 4rem;
+  background-color: var(--accent-color);
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .button {
+    font-size: 5rem;
+    padding: 3rem 4rem;
+  }
+}
+@media (max-width: 960px) {
+  .button {
+    font-size: 3rem;
+    padding: 2rem 3.5rem;
+  }
+}
+
+.link {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+@media (max-width: 1200px) {
+  .link {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 960px) {
+  .link {
+    font-size: 1.5rem;
+  }
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--modal-background);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 0 0 2rem 0;
+  border: none;
+  width: 100%;
+  max-width: 60rem;
+  border-radius: 2rem;
+}
+
+.close {
+  color: #7B756B;
+  font-size: 4rem;
+  font-weight: 400;
+  position: absolute;
+  right: 2.5rem;
+  top: 1.5rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.modal-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 0 2rem;
+  border-bottom: 1px solid #E3E3E3;
+}
+ul li:last-child {
+  border: none;
+}
+ul li img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+}
+ul li a {
+  color: var(--neutral-color);
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
